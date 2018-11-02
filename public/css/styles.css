@@ -1,0 +1,62 @@
+.box1{
+    font-size: 40px;
+    font-family: Sawarabi Mincho;
+}
+.box2, .box3, .box4{
+    float:left;
+    width: 33.33333%;
+}
+
+
+body {font-family: 'Sawarabi Mincho', sans-serif;}
+
+.example {
+    position: relative;
+}
+
+.example p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    margin:0;
+    padding:0;
+    /*文字の装飾は省略*/
+}
+
+.example img {
+    width: 100%;
+}
+
+
+
+.example .fa {/*classがfaのアイコンに対して*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    margin:0;/*余計な隙間を除く*/
+    padding:0;/*余計な隙間を除く*/
+    color: white;/*アイコン色*/
+    font-size: 60px;/*サイズ*/
+}
+.square_btn{
+    font-size: 20px;
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #668ad8;/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 7px #627295;
+    border-radius: 5px;
+}
+.square_btn:active {/*ボタンを押したとき*/
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+}
