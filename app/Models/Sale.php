@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Backpack\CRUD\CrudTrait;
 
-class Tag extends Model
+class Sale extends Model
 {
     use CrudTrait;
 
@@ -15,14 +15,14 @@ class Tag extends Model
     |--------------------------------------------------------------------------
     */
 
-    protected $table = 'tags';
+    protected $table = 'sales';
     // protected $primaryKey = 'id';
     // public $timestamps = false;
-    // protected $guarded = ['id'];
-    protected $fillable = ['name'];
+     protected $guarded = [''];
+    protected $fillable = ['sale','name','created_at','updated_at'];
     // protected $hidden = [];
     // protected $dates = [];
-    public $timestamps = true;
+
     /*
     |--------------------------------------------------------------------------
     | FUNCTIONS

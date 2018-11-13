@@ -24,3 +24,13 @@ Route::group(['prefix' => 'admin', 'middleware' => 'admin'], function()
 
     // [...] other routes
 });
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+route::get('/email',function() {
+    return view('test');
+});
+
+route::get('/aaa','aaaController@aaa');
+route::get('/sale','saleController@sale');
+route::post('/create','saleController@create');
