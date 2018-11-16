@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="content-language" content="ja">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link href="css/ichiran.css" rel="stylesheet" type="text/css">
+    <link href="css/top.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Pattaya" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
     <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
+
     <div class="top">
         <div class="tt">
             <div style="text-align:center">
@@ -32,7 +34,7 @@
             <div class="contents-box">
                 <a href="home"><img src="img/tokyo.jpg" alt="サンプル"></a>
                 <h2>東京特集</h2>
-                <p>羽田空港発着、東京のおすすめツアー・格安航空券のことならOICTOURにお任せ下さい！最安値から内容充実プランまであなたの希望にあった商品がきっと見つかります！</p>
+                <p>羽田空港着、東京のおすすめツアー・格安航空券のことならOICTOURにお任せ下さい！最安値から内容充実プランまであなたの希望にあった商品がきっと見つかります！</p>
             </div>
 
             <div class="contents-box">
