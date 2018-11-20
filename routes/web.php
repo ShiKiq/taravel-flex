@@ -21,15 +21,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-
-Route::get('/top', function () {
-    return view('top');
-});
-
-Route::get('/ichiran', function () {
-    return view('ichiran');
-});
-
-Route::get('/yoyaku', function () {
-    return view('yoyaku');
-});
+route::get('/tokyo','ichiranController@tokyo');
+route::get('/yoyaku','ichiranController@yoyaku');
+route::get('/top','ichiranController@top');
+route::get('/ichiran','ichiranController@ichiran');
