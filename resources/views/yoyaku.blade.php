@@ -1,56 +1,48 @@
+@extends('layouts.app')
+@section('style')
+    label{
+    margin-right:30px;
+    }
+@endsection
+@section('content')
 
-<!doctype html>
-<html lang="ja">
-<meta charset="UTF-8">
-<meta http-equiv="content-language" content="ja">
+    <link rel="stylesheet"href="/css/yoyakuform.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <div class="form">
+        <li>
 
-<link rel="stylesheet" href='/css/yoyaku.css'>
-<html>
-<header>
-    <title>oic 都道府県</title>
-<h1><center>OIC　都道府県</center></h1>
-    <header class="header">
-        <h1><img src="/img/OIC.png"></h1>
-        <nav>
-            <ul>
-                <li>サービス案内</li>
-                <li>料金プラン</li>
-                <li>実績</li>
-                <li>よくある質問</li>
-                <li>お問い合わせ</li>
-            </ul>
-        </nav>
-    </header>
-<body>
+        </li>
+        <li>
+            <form action="/yoyaku" method="POST">
+                <?=csrf_field()?>
+                    <p><label>予約人数:</label>
+                    <label>大人:</label>
+                    <input type="number" class="form-control" name="adult" value="{{ old('name') }}" required="required">
+
+                    <label>子ども:</label>
+                    <input type="number" class="form-control" name="children" value="{{ old('name') }}" required="required"></p>
 
 
-<div class="container">
-    <div class="contents-box">
-        <a href="index.html"><img src="/img/aa.jpg" alt=border="0"></a>
-        <h2>沖縄島</h2>
-        <p>沖縄島には、連合国軍による 1945 年の大規模な侵攻を後世に伝えるために建てられた沖縄県平和祈念資料館、ジンベエザメとマンタがいる沖縄美ら海水族館があります。</p>
+                    <p><label>氏名:</label>
+                    <input type="text" class="form-control" id="neme" name="name" placeholder="葉山　公平" value="{{ old('name') }}" required="required"></p>
+
+                    <p><label>mail:</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="example@email.com" value="{{ old('email') }}" required="required"></p>
+
+                    <p><label>電話番号:</label>
+                    <input type="tel" class="form-control" id="tel" name="tel" placeholder="00000000000" value="{{ old('tel') }}" required="required"></p>
+
+                    <p><label>住所:</label>
+                    <input type="address" class="form-control" id="address" name="address" placeholder="大阪..." value="{{ old('address') }}" required="required"></p>
+
+                <input type="submit"value="ok">
+            </form>
+        </li>
+        <li>
+        </li>
+
     </div>
 
-    <div class="contents-box">
-        <a href="index.html"><img src="/img/23.jpg" alt=border="0"></a>
-        <h2>沖縄島</h2>
-        <p>沖縄島には、連合国軍による 1945 年の大規模な侵攻を後世に伝えるために建てられた沖縄県平和祈念資料館、ジンベエザメとマンタがいる沖縄美ら海水族館があります。</p>
-    </div>
-
-    <div class="contents-box">
-        <a href="index.html"><img src="/img/24.jpg" alt=border="0"></a>
-        <h2>沖縄島</h2>
-        <p>沖縄島には、連合国軍による 1945 年の大規模な侵攻を後世に伝えるために建てられた沖縄県平和祈念資料館、ジンベエザメとマンタがいる沖縄美ら海水族館があります。</p>
-    </div>
-
-    <div class="contents-box">
-        <a href="index.html"><img src="/img/aa.jpg" alt=border="0"></a>
-        <h2>沖縄島</h2>
-        <p>沖縄島には、連合国軍による 1945 年の大規模な侵攻を後世に伝えるために建てられた沖縄県平和祈念資料館、ジンベエザメとマンタがいる沖縄美ら海水族館があります。</p>
-    </div>
-</div>
 
 
-</div>
-</body>
-</html>
+@endsection
