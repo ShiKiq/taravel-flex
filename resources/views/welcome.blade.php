@@ -4,7 +4,6 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="content-language" content="ja">
 
         <title>Laravel</title>
 
@@ -80,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravelですよ。草
+                    Laravelですよ。
                 </div>
 
                 <div class="links">

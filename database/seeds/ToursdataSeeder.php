@@ -19,6 +19,7 @@ class ToursdataSeeder extends Seeder
                 'price' => 5000,
                 'hotel' => '愉快リゾート 千畳店',
                 'stocks' => 10,
+                'prefectures' => 30,
             ],
         ]);
 
@@ -30,6 +31,7 @@ class ToursdataSeeder extends Seeder
                 'price' => 21000,
                 'hotel' => 'ラビスタ函館ベイ',
                 'stocks' => 9,
+                'prefectures' => 1,
             ],
         ]);
     }

@@ -20,6 +20,7 @@ class CreateTourTable extends Migration
             $table->integer('price');
             $table->string('hotel');
             $table->integer('stocks');
+            $table->integer('prefectures');
             $table->timestamps();
         });
     }
