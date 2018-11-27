@@ -61,6 +61,13 @@
                                         {{ __('Logout') }}
                                     </a>
 
+
+                                    <a class="dropdown-item" a href="rireki"
+                                    >
+                                        {{ __('履歴') }}
+                                    </a>
+
+
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
                                     </form>

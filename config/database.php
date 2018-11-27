@@ -31,6 +31,17 @@ return [
     |
     */
 
+    'mysql' => array(
+        'driver'    => 'mysql',
+        'host'      => 'localhost',
+        'database'  => 'bbc',
+        'username'  => 'root',
+        'password'  => 'root',
+        'charset'   => 'utf8',
+        'collation' => 'utf8_unicode_ci',
+        'prefix'    => '',
+    ),
+
     'connections' => [
 
         'sqlite' => [

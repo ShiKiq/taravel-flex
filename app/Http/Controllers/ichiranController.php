@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+
 use App\Models\Tour;
 use Illuminate\Http\Request;
 use App\prefectures;
@@ -30,4 +31,23 @@ class ichiranController extends Controller
         $prefectures = prefectures::all();
         return view('ichiran',['prefectures'=>$prefectures]);
     }
+
+  
+use Illuminate\Http\Request;
+
+class ichiranController extends Controller
+{
+
+
+public function tokyo(){
+    return view('tokyo');
+}
+public function top(){
+    return view ('top');
+}
+public function ichiran()
+{
+    return view('ichiran');
+}
+
 }
