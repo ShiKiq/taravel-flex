@@ -89,3 +89,7 @@ Route::get("rireki",function(){
     return view("rireki");
 });
 
+
+//mailテスト　
+
+Route::get("/mail",TestMailController::class."@test");
