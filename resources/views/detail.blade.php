@@ -88,7 +88,7 @@
     <div class="box4">
         <li>
             <p style="text-align:center;">
-                <a href="#" class="hvr-rectangle-out">予約する</a>
+                <a href="/{id}/yoyaku" class="hvr-rectangle-out">予約する</a>
             </p>
         </li>
     </div>

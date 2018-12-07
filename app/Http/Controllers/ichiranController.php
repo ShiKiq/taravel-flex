@@ -10,44 +10,33 @@ use App\tourList;
 
 class ichiranController extends Controller
 {
-    public function list($prefectures){
-        $tourList = TourList::where('prefectures',$prefectures)->get();
-        return view('list',['tourlist' => $tourList]);
+    public function list($prefectures)
+    {
+        $tourList = TourList::where('prefectures', $prefectures)->get();
+
+        return view('list', ['tourlist' => $tourList]);
     }
 
-    public function detail($prefectures){
+    public function detail($prefectures)
+    {
         return view('detail');
     }
 
-    public function tokyo(){
+    public function tokyo()
+    {
         return view('tokyo');
     }
 
-    public function top(){
-        return view ('top');
+    public function top()
+    {
+        return view('top');
     }
 
-    public function ichiran(){
+    public function ichiran()
+    {
         $prefectures = prefectures::all();
-        return view('ichiran',['prefectures'=>$prefectures]);
+        return view('ichiran', ['prefectures' => $prefectures]);
     }
 
-  
-use Illuminate\Http\Request;
-
-class ichiranController extends Controller
-{
-
-
-public function tokyo(){
-    return view('tokyo');
-}
-public function top(){
-    return view ('top');
-}
-public function ichiran()
-{
-    return view('ichiran');
-}
 
 }
