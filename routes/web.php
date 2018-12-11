@@ -34,3 +34,9 @@ route::get('/email',function() {
 route::get('/aaa','aaaController@aaa');
 route::get('/sale','saleController@sale');
 route::post('/create','saleController@create');
+route::get('/mail','MailController@send');
+
+
+route::get('/yoyaku','yoyakuController@yoyaku')->middleware('auth');
+route::post('/create','yoyakuController@create');
+route::get('/rireki','yoyakuController@rireki');

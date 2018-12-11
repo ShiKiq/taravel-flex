@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
-
+use Illuminate\Support\Facades\Schema;
 class CreateSalesTable extends Migration
 {
     /**
@@ -16,6 +16,7 @@ class CreateSalesTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->integer('sale');
+            $table->string('userid');
             $table->timestamps();
         });
     }

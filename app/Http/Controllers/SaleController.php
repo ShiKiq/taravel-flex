@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\User;
 use App\Models\Sale;
+use Illuminate\Support\Facades\Auth;
 class SaleController extends Controller
 {
 
@@ -26,9 +27,12 @@ class SaleController extends Controller
 
     protected function create(Request $request)
     {
+
+
         $post = new Sale;
         $post->name = $request->name;
         $post->sale = $request->sale;
+        $post->userid = Auth::id();
         $post->save();
 
         return redirect('/sale');
