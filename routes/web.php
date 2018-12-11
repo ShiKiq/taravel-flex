@@ -89,3 +89,17 @@ Route::get("rireki",function(){
     return view("rireki");
 });
 
+
+
+
+// 以下追記
+//Route::get('/user', function () {
+////    //$users =DB::select('select * from user');
+////    $users = users::all(); //全件取得
+//    return view('user'
+////        'users'=>$users
+////    ]);
+//});
+
+
+route::get('/user','mypagecontroller@mypage');

@@ -62,9 +62,9 @@
                                     </a>
 
 
-                                    <a class="dropdown-item" a href="rireki"
+                                    <a class="dropdown-item" a href="user"
                                     >
-                                        {{ __('履歴') }}
+                                        {{ __('My page') }}
                                     </a>
 
 
