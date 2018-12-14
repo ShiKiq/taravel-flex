@@ -21,6 +21,7 @@ class CreateTourListsTable extends Migration
             $table->string('hotel');
             $table->integer('stocks');
             $table->integer('prefectures');
+            $table->string('img');
             $table->timestamps();
         });
     }

@@ -1,4 +1,7 @@
+@extends('layouts.app')
+@section('content')
 <!doctype html>
+
 <html lang="ja">
 <body>
 
@@ -11,52 +14,52 @@
 
 
     <div class="box1">
-        <h1>白浜温泉旅行ツアー</h1>      <!--データベース-->
+        <h1>{{$tour -> tours}}</h1>      <!--データベース-->
     </div>
 
 <div class="box2">
-    <div class="slideshow">
-        <input type="radio" name="slideshow" id="switch1" checked>
-        <input type="radio" name="slideshow" id="switch2">
-        <input type="radio" name="slideshow" id="switch3">
-        <div class="slideContents">
-            <section id="slide1">
-                <div class="contents">
-                    <h2>海！</h2>
-                    <p>白良浜</p>
-                </div>
-                <img src="/img/shirahama1.jpg">
-            </section>
-            <section id="slide2">
-                <div class="contents">
-                    <h2>岩！</h2>
-                    <p>これが岩</p>
-                </div>
-                <img src="/img/shirahama2.jpg">
-            </section>
-            <section id="slide3">
-                <div class="contents">
-                    <h2>岩！</h2>
-                    <p>これもいわ！</p>
-                </div>
-                <img src="/img/shirahama3.jpg">
-            </section>
-        </div>
-        <p class="arrow prev">
-            <button class="button1" type="submit"></button>
-            <i class="ico"></i>
-            <label for="switch1"></label>
-            <label for="switch2"></label>
-            <label for="switch3"></label>
-        </p>
-        <p class="arrow next">
-            <button class="button1" type="submit">  </button>
-            <i class="ico"></i>
-            <label for="switch1"></label>
-            <label for="switch2"></label>
-            <label for="switch3"></label>
-        </p>
-    </div>
+    {{--<div class="slideshow">--}}
+        {{--<input type="radio" name="slideshow" id="switch1" checked>--}}
+        {{--<input type="radio" name="slideshow" id="switch2">--}}
+        {{--<input type="radio" name="slideshow" id="switch3">--}}
+        {{--<div class="slideContents">--}}
+            {{--<section id="slide1">--}}
+                {{--<div class="contents">--}}
+                    {{--<h2>海！</h2>--}}
+                    {{--<p>白良浜</p>--}}
+                {{--</div>--}}
+                {{--<img src="/img/shirahama1.jpg">--}}
+            {{--</section>--}}
+            {{--<section id="slide2">--}}
+                {{--<div class="contents">--}}
+                    {{--<h2>岩！</h2>--}}
+                    {{--<p>これが岩</p>--}}
+                {{--</div>--}}
+                {{--<img src="/img/shirahama2.jpg">--}}
+            {{--</section>--}}
+            {{--<section id="slide3">--}}
+                {{--<div class="contents">--}}
+                    {{--<h2>岩！</h2>--}}
+                    {{--<p>これもいわ！</p>--}}
+                {{--</div>--}}
+                {{--<img src="/img/shirahama3.jpg">--}}
+            {{--</section>--}}
+        {{--</div>--}}
+        {{--<p class="arrow prev">--}}
+            {{--<button class="button1" type="submit"></button>--}}
+            {{--<i class="ico"></i>--}}
+            {{--<label for="switch1"></label>--}}
+            {{--<label for="switch2"></label>--}}
+            {{--<label for="switch3"></label>--}}
+        {{--</p>--}}
+        {{--<p class="arrow next">--}}
+            {{--<button class="button1" type="submit">  </button>--}}
+            {{--<i class="ico"></i>--}}
+            {{--<label for="switch1"></label>--}}
+            {{--<label for="switch2"></label>--}}
+            {{--<label for="switch3"></label>--}}
+        {{--</p>--}}
+    {{--</div>--}}
 
 </div>
     <div>
@@ -82,16 +85,21 @@
                 <th>食事</th>
                 <td>テキストが入ります</td>
             </tr>
+            <tr>
+                <th></th>
+                <td><img src="/img/{{$tour -> img}}" alt=""></td>
+            </tr>
         </table>
     </div>
 
     <div class="box4">
-        <li>
+
             <p style="text-align:center;">
                 <a href="/{id}/yoyaku" class="hvr-rectangle-out">予約する</a>
             </p>
-        </li>
+
     </div>
 
 </body>
 </html>
+@endsection
