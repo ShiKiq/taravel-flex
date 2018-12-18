@@ -1,0 +1,16 @@
+.price_warp {
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    　　flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+.tbl_price{width: calc(97%/3); margin: 0.5%;}
+.tbl_price th { background: #eee;}
+.tbl_price td,.tbl_price th{padding: .3em .2em;border: 1px solid #ddd;box-sizing: border-box;}
+.tbl_price .price_text{text-align:center;font-weight:bold;font-size:120%;}
+.tbl_price .price_text_small{font-size:80%;}
+
+@media (max-width: 798px){
+    .tbl_price{width: calc(98%/2); margin: 0.5%;}
+}
