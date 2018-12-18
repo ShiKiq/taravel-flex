@@ -59,3 +59,5 @@ route::get('/list/{prefectures}','ichiranController@list');
 Route::get("kanryo",function(){
     return view("kanryo");
 });
+
+route::get('/user','mypagecontroller@mypage');
