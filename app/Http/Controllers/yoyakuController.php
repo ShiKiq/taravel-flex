@@ -7,19 +7,20 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
+use App\tourList;
 class yoyakuController extends Controller
 {
-    public function yoyaku()
-    {
 
-        return view('yoyaku');
+    public function yoyakus($id)
+    {
+        $tour = TourList::find($id);
+        return view('yoyaku', ['tour' => $tour]);
     }
 
     protected function create(Request $request)
     {
-        $validatedData = $request->validate([
-            'email' =>'email'|'max:255',
-        ]);
+
+
 
 
         $post = new yoyaku;
@@ -32,7 +33,7 @@ class yoyakuController extends Controller
         $post->userid = Auth::id();
         $post->save();
 
-        return redirect('/yoyaku');
+        return redirect('/kanryo');
 
 
     }

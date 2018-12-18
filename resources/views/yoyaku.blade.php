@@ -13,14 +13,15 @@
 
         </li>
         <li>
+            <h3> {{$tour->tours}}</h3>
             <form action="/create" method="POST">
                 <?=csrf_field()?>
                 <p><label>予約人数:</label>
                     <label>大人:</label>
-                    <input type="number" class="form-control" name="adult" value="{{ old('name') }}" required="required">
+                    <input type="number" min="1" class="form-control" name="adult" value="{{ old('name') }}" required="required">
 
                     <label>子ども:</label>
-                    <input type="number" class="form-control" name="children" value="{{ old('name') }}" required="required"></p>
+                    <input type="number" min="0" class="form-control" name="children" value="{{ old('name') }}" required="required"></p>
 
 
                 <p><label>氏名:</label>

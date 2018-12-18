@@ -37,7 +37,7 @@ route::post('/create','saleController@create');
 route::get('/mail','MailController@send');
 
 
-route::get('/yoyaku','yoyakuController@yoyaku')->middleware('auth');
+route::get('/yoyaku/{id}','yoyakuController@yoyakus')->middleware('auth');
 route::post('/create','yoyakuController@create');
 route::get('/rireki','yoyakuController@rireki');
 
@@ -55,3 +55,7 @@ route::get('/test' , function (){
 });
 
 route::get('/list/{prefectures}','ichiranController@list');
+
+Route::get("kanryo",function(){
+    return view("kanryo");
+});
