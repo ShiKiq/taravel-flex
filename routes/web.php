@@ -40,3 +40,18 @@ route::get('/mail','MailController@send');
 route::get('/yoyaku','yoyakuController@yoyaku')->middleware('auth');
 route::post('/create','yoyakuController@create');
 route::get('/rireki','yoyakuController@rireki');
+
+Route::get('/home', 'HomeController@index')->name('home');
+route::get('/tokyo','ichiranController@tokyo');
+route::get('/aaa','ichiranController@yoyaku');
+route::get('/top','ichiranController@top');
+route::get('/ichiran','ichiranController@ichiran');
+
+route::get('/tour','TourController@tour');
+route::get('/uuu','TourController@aaa');
+route::get('/detail/{id}' ,'TourController@detail');
+route::get('/test' , function (){
+    return view('test');
+});
+
+route::get('/list/{prefectures}','ichiranController@list');

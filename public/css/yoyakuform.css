@@ -1,0 +1,19 @@
+div.form{
+    display: flex;
+}
+
+.form li {
+    width: calc(100% / 3);
+}
+
+div,
+li {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+li {
+    text-align: center;
+}

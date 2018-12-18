@@ -1,0 +1,7 @@
+.check::before{
+    font-family:'Font Awesome 5 Free';
+    content: "\f00c";
+    padding-right:5px; /* 適当に調整 */
+    color: #6C9FCE;
+    font-weight: 600;
+}
