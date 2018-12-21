@@ -25,8 +25,6 @@
 
                 <a href="ichiran" class="square_btn">全ツアー一覧</a>
 
-                <a href="home" class="square_btn">全ツアー一覧</a>
-
             </div>
         </div>
     </div>
@@ -36,19 +34,19 @@
 
     <div class="contents-wrap">
         <div class="contents-box">
-            <a href="home"><img src="img/tokyo.jpg" alt="サンプル"></a>
+            <a href="list/13"><img src="img/tokyo.jpg" alt="flexbox"></a>
             <h2>東京特集</h2>
             <p>羽田空港着、東京のおすすめツアー・格安航空券のことならOICTOURにお任せ下さい！最安値から内容充実プランまであなたの希望にあった商品がきっと見つかります！</p>
         </div>
 
         <div class="contents-box">
-            <a href="home"><img src="img/okinawa.jpg" alt="サンプル"></a>
+            <a href="list/47"><img src="img/okinawa.jpg" alt="flexbox"></a>
             <h2>沖縄特集</h2>
             <p>夏休みシーズンを目前に「今年はどこで遊ぼうかな」なんて考えているあなた。コバルトブルーの海が広がる沖縄で、シュノーケリングなんていかがですか</p>
         </div>
 
         <div class="contents-box">
-            <a href="home"><img src="img/osaka.jpg" alt="サンプル"></a>
+            <a href="list/27"><img src="img/osaka.jpg" alt="flexbox"></a>
             <h2>大阪特集</h2>
             <p>お笑いの町として知られている大阪には、魅力的なスポットが満載！「大阪城」などの歴史スポットのみならず、近年は梅田の「グランフロント大阪」や天王寺の「あべのハルカス」など、大都市ならではの大型施設も注目を集めています。あなたも大阪を満喫してみませんか？</p>
         </div>

@@ -14,8 +14,18 @@
         </li>
         <li>
             <h3> {{$tour->tours}}</h3>
+
             <form action="/create" method="POST">
                 <?=csrf_field()?>
+                    <table>
+                        <tr>
+                            <th>{{ $tour -> day }}</th>
+                        </tr>
+
+                        <tr>
+                            <th>{{$tour -> hotel}}</th>
+                        </tr>
+                    </table>
                 <p><label>予約人数:</label>
                     <label>大人:</label>
                     <input type="number" min="1" class="form-control" name="adult" value="{{ old('name') }}" required="required">

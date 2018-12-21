@@ -61,3 +61,5 @@ Route::get("kanryo",function(){
 });
 
 route::get('/user','mypagecontroller@mypage');
+
+route::get('/rireki','rirekiController@rireki');

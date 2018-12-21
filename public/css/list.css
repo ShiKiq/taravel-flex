@@ -1,3 +1,6 @@
+body{
+    background-color: white;
+}
 
 .container {
     display: flex;
@@ -8,6 +11,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    background-color: white;
 }
 
 .contents-box {
@@ -47,6 +51,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+
 }
 
 .header h1 {

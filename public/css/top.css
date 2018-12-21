@@ -40,12 +40,10 @@ div h1{
 }
 
 
-
 .contents-wrap {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: white;
 }
 
 .contents-box {
@@ -53,15 +51,16 @@ div h1{
     padding: 3rem;
     width: 32%;
     background-color: #f0f0f0;
+
 }
 
 .contents-box img {
     display: block;
     margin-bottom: 3rem;
-    width: 480px;
-    height: 270px;
-}
+    width: 100%;
+    height: auto;
 
+}
 
 .contents-box h2 {
     margin-bottom: 2rem;
@@ -78,8 +77,6 @@ div h1{
         width: 100%;
     }
 }
-
-
 
 
 .contents-wrap2 {
